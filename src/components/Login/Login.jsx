@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./login.module.css";
-// import Navbar from "../Home/Navbar";
+import Navbar from "../Home/Navbar";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -19,6 +19,7 @@ const Login = () => {
 
   return (
     <div>
+      <Navbar />
       <div id="container" className={containerClassName}>
         <div className={`${styles.form_container} ${styles.signup_container}`}>
           <form action="#">
